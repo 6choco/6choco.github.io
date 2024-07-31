@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.wrapper{
+  max-width:  1500px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.gridT{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    margin-top: 6%;
+  }
+
+img{
+  height: 50%;
+}
