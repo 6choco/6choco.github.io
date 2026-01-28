@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>ホーム</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>～東京メトロに乗り入れる車種全制覇の旅～</h1>
-    <h2>・・ルール・・</h2>
-  <div class="shikaku">
-    <ul>
-      <li>1区間以上乗車すること。</li>
-      <li>その車種またはレア車両に乗った事を証明できる写真や動画を撮影する。</li>
-      <li>運用情報は1人4回まで閲覧可能。</li>
-      <li>1時間毎にルーレットを回し、その指示に従う。※次ルーレット回すときまでにクリアする必要がある。</li>
-      <li>レア車両計5種類乗る。<a href="reasya-ithiran.html">※レア車両として扱うもの一覧</a></li>
-      <li>同車種・別車種として扱うものがある。<a href="onazi.bethu-ihiran.html">※同車種・別車種として扱うもの一覧</a></li>
-      <li>鉄道会社や周りの人の迷惑にならないこと。</li>
-    </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>川越 時を越えるフォトラリー</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+  <h1>川越 時を越えるフォトラリー</h1>
+  <p>4スポット以上で達成</p>
+</header>
+
+<div id="map"></div>
+
+<div id="gallery">
+  <div class="spot">川越氷川神社<br><img></div>
+  <div class="spot">川越城跡<br><img></div>
+  <div class="spot">時の鐘<br><img></div>
+  <div class="spot">川越八幡宮<br><img></div>
+  <div class="spot">喜多院<br><img></div>
+  <div class="spot">川越りそなテラス<br><img></div>
+</div>
+
+<div id="camera">
+  <video id="video" autoplay playsinline></video>
+  <canvas id="canvas"></canvas>
+  <button id="shot">撮影</button>
+  <button id="close">戻る</button>
+</div>
+
+<div id="complete">
+  <div class="complete-card">
+    <h2>🎉 達成おめでとうございます</h2>
+    <p>川越フォトラリー達成</p>
+    <div id="result"></div>
+    <p class="seal">認定印</p>
+    <button onclick="location.reload()">もう一度巡る</button>
   </div>
-    <a href="strat.html"><h2>スタートページはこちらから</h2></a>
-  </body>
+</div>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+<script src="app.js"></script>
+
+</body>
 </html>

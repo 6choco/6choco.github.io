@@ -1,100 +1,83 @@
-@charset "UTF-8";
-
-.grid{
-  display: grid;
-  gap: 26px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(6,1fr);
-  margin-top: 6%;
-  margin-bottom: 50%;
-
+body {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN", serif;
+  background: #f5efe3;
+  text-align: center;
 }
 
-.wrapper{
-  max-width:  1500px;
-  margin: 0 auto;
-  padding: 0 4%;
-}
-
-img{
-  height: 100px;
-  
-}
-
-.q{
-  height: 400px;
-}
-.grid2{
-  display: grid;
-  gap: 26px;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  margin-top: 6%;
-}
-
-.grid3{
-  display: grid;
-  gap: 26px;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  margin-top: 6%;
-}
-
-.right{
-    margin: 0 0 0 auto;
-    height: 100px;
-    width:  500px;
-  }
-
-
-.shikaku{
+header {
+  background: #4b2e2b;
+  color: #fff;
   padding: 10px;
-  width: 50%;
-  border: 1px solid #333;
-  background: white;
 }
 
-.g{
-  background-color: #fdbf64;
-  text-align: center;
+#map {
+  height: 40vh;
+  width: 100%;
 }
 
-.m{
-  background-color: #f37053;
-  text-align: center;
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 10px;
 }
 
-.h{
-  background-color: #b4c1d1;
-  text-align: center;
+.spot {
+  border: 2px solid #8b5a2b;
+  background: #fff;
+  font-size: 12px;
+  padding: 5px;
 }
 
-.t{
-  background-color: #00aaff;
-  text-align: center;
+.spot img {
+  width: 100%;
+  margin-top: 5px;
 }
 
-.c{
-  background-color: #00a096;
-  text-align: center;
+#camera, #complete {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.y{
-  background-color: #dfcba5;
-  text-align: center;
+video, canvas {
+  width: 100%;
+  max-width: 400px;
 }
 
-.z{
-  background-color: #c5a3cb;
-  text-align: center;
+button {
+  background: #7a3b2e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
-.n{
-  background-color: #3aacad;
-  text-align: center;
+.complete-card {
+  background: #fff8e6;
+  color: #4b2e2b;
+  border: 4px solid #8b5a2b;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
 }
 
-.f{
-  background-color: #B22222;
-  text-align: center;
+.seal {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #b22222;
+  font-weight: bold;
+}
+
+#result img {
+  width: 45%;
+  margin: 5px;
 }
